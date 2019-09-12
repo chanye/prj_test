@@ -20,6 +20,7 @@ public class StartGuard
 				String exePath = PropUtils.getValue("exePath");
 				ProcessService.killProcess(exePath.substring(exePath.lastIndexOf("/")+1));
 				ProcessService.startProc(exePath);
+				System.out.println("this is a test......");
 			}
 		};
 		ScheduleService.schedule(runnable, initialDelay, period);
