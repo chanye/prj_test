@@ -7,6 +7,7 @@ import com.cssi.util.PropUtils;
 public class StartGuard
 {
 	private static int corePoolSize = 5;
+	
 	private static long initialDelay =5;
 	private static long period = Integer.parseInt(PropUtils.getValue("schedulePeriod"));
 	public static void main(String[] args)
